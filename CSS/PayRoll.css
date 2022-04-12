@@ -5,8 +5,9 @@
 }
 
 body {
-    margin: 0;
+    margin-left: 0;
     height: 100%;
+    background-color: #f7f7f7;
 }
 
 .header {
@@ -40,6 +41,7 @@ body {
     letter-spacing: 0px;
     color: #82a70c;
     text-transform: capitalize;
+    padding-left: 10px;
 }
 
 .emp-payroll {
@@ -56,6 +58,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 0px solid green;
+    margin-top: 20px;
 }
 
 .form {
@@ -75,6 +78,7 @@ body {
     text-transform: capitalize;
     opacity: 1;
     padding-bottom: 20px;
+    margin-left: 50px;
 }
 
 .row-content {
@@ -83,6 +87,9 @@ body {
     margin-bottom: 10px;
     align-items: center;
     border: 0px solid green;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .label {
@@ -90,7 +97,7 @@ body {
 }
 
 label {
-    padding: 12px 12px 12px;
+    padding: 12px 12px 12px 0;
     display: inline-block;
 }
 
@@ -141,6 +148,7 @@ select {
     letter-spacing: 0px;
     color: #42515f;
     background-color: transparent;
+    margin-right: 20px;
 }
 
 
@@ -157,9 +165,9 @@ select {
     font-size: 20px;
     font-family: Roboto;
     letter-spacing: 0px;
-    color: #425f42;
+    color: #42515f;
     opacity: 1;
-    background: #a8a8a85b 0% 0% no-repeat padding-box;
+    background: #E2E2E2 0% 0% no-repeat padding-box;
     border: 2px solid #969696;
     border-radius: 5px;
     font-weight: 400;
@@ -167,21 +175,31 @@ select {
     padding: 7px 7px;
     border: 1px solid #707070;
     cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
 }
 
 .submitButton {
     margin-right: 30px;
-    padding: 8px 18px;
+    padding: 20px 40px;
 }
 
 .cancelButton {
     text-decoration: none;
     text-align: center;
-    padding: 8px 18px;
+    padding: 20px 40px;
 }
 
 .resetButton {
-    padding: 8px 18px;
+    padding: 20px 40px;
+}
+
+error-output {
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }
 
 @media only screen and (max-width: 960px) {
@@ -218,7 +236,7 @@ select {
     .submitButton {
         margin: 0;
     }
-    .button-content {
+    .buttonParent {
         flex-direction: column-reverse;
         align-items: flex-start;
     }
